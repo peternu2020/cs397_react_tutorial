@@ -14,6 +14,9 @@ const firebaseConfig = {
   appId: "1:588607198122:web:ef7110fb3537a2119451d3"
 };
 
+firebase.initializeApp(firebaseConfig);
+const db = firebase.database().ref();
+
 const useSelection = () => {
   const [selected, setSelected] = useState([]);
   const toggle = (x) => {
